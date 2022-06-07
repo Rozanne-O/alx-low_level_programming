@@ -5,9 +5,6 @@
 /*betty style doc for function main goes here*/
 /**
  * main -use to check for conditions
- *
- * Description: return the results when the conditions are met
- *
  * Return: return integer 0
  *
  */
@@ -17,7 +14,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	last_digit = n % 10;
-	/* your code goes there */
+i	/* your code goes there */
 	if (last_digit > 5)
 	{
 

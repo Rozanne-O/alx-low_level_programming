@@ -1,1 +1,1 @@
-new hello world read me
+pointers arrays strings read me

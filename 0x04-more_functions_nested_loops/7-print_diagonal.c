@@ -5,7 +5,7 @@
  * @n: number of times the character \ should be printed
  */
 
-void print_diagnonal(int n)
+void print_diagonal(int n)
 {
 	if (n <= 0)
 	{

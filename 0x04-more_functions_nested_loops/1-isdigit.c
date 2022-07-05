@@ -3,9 +3,9 @@
  * _isdigit - checks for digits
  * @c: the character to check for
  * Description: checks for digits.
- * Return: 1 if c is a digit . O otherwise
+ * Return: 1 if c is a digit. O otherwise
  * */
 int _isdigit(int c)
 {
-	return (c >= "0" && c <= '9');
+	return (c >= '0' && c <= '9');
 }

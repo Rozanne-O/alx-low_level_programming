@@ -1,20 +1,30 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code 
+ * _strcmp - compare two strings
+ * @s1: first string
+ * @s2: second string
  *
- * Return: always 0
+ * Description: works exactly like strcmp from <string.h>
+ * Return: -ve integer, 0 or +ve integer if s1 is less than,
+ * equal to or greater than s2
  */
 
-int main(void)
+int _strcmp(char *s1, char *s2)
 {
-	char s1[] = "Hello";
-	char s2[] = "World!";
+       int diff = 0;
 
-	printf("%d\n", _strcmp(s1, s2));
-	printf("%d\n", _strcmp(s2, s1));
-	printf("%d\n", _strcmp(s1, s1));
+       while ( diff == 0)
+       {
+	       diff = *s1 - *s2;
 
-	return (0);
+	       /* break if one of the strings is empty */
+	       if (*s1 == '\0' || *s2 == '\0')
+		       break;
+
+	       s1++;
+	       s2++;
+       }
+
+       return (diff);
 }
